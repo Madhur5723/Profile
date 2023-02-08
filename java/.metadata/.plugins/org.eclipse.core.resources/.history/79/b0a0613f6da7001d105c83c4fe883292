@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Salary {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the Salary");
+		double Salary=sc.nextDouble();
+		System.out.println("Enter the shifts");
+		int shifts=sc.nextInt();
+		if(Salary>8000)
+		{
+			System.out.println("Salary is greater than 8000");
+		}
+		else if (Salary==0)
+		{
+			System.out.println("Salary is 0");
+		}
+		else if (shifts==0)
+		{
+			System.out.println("Shifts is 0");
+		}
+		else
+		{
+			double food=Salary*0.2;
+			double travel=Salary*0.3;
+			double extra=Salary*shifts*0.2;	
+			double expense=food+travel;
+			System.out.println("Total"+(Salary-expense)+extra);
+
+			
+			
+		}
+	
+	}
+
+}
